@@ -1,0 +1,134 @@
+# 🤖 SignalGrowth — AI-Powered Sales Operating System
+
+> A production-grade, memory-driven AI sales platform that manages the complete lead lifecycle — from first contact to conversion — without relying on Zapier, Make, or any third-party automation tools.
+
+**Live Platform:** [app.signalgrowth.in](https://app.signalgrowth.in) &nbsp;|&nbsp; **Company:** [signalgrowth.in](https://signalgrowth.in)
+
+---
+
+## 📽️ Demo Videos
+
+| Demo | Link |
+|------|------|
+| Sales Agent — Overview | [Watch on YouTube](https://youtu.be/zaRG07H0aaY) |
+| Sales Agent — Workflow walkthrough | [Watch on YouTube](https://youtu.be/_q9W6H_6KgQ) |
+| Sales Agent — Live interaction | [Watch on YouTube](https://youtu.be/t7Z_OTmr2VE) |
+
+---
+
+## 🧠 What This System Does
+
+Most CRMs are databases with a UI on top. This is different — it's a **memory-driven AI operating system** for sales where every lead interaction, status change, and decision is stored, tracked, and surfaced intelligently.
+
+The AI layer operates **strictly on structured stored data** — not probabilistic model outputs — which eliminates hallucination entirely and makes every response reliable and auditable.
+
+---
+
+## 🏗️ System Architecture
+
+```
+┌─────────────────────────────────────────────────────┐
+│                   CLIENT / DASHBOARD                │
+└───────────────────────┬─────────────────────────────┘
+                        │ REST API
+┌───────────────────────▼─────────────────────────────┐
+│                    API LAYER                        │
+│              Node.js + Express.js                   │
+└───────────────────────┬─────────────────────────────┘
+                        │
+┌───────────────────────▼─────────────────────────────┐
+│               BACKEND PROCESSING LAYER              │
+│   Lead Engine │ Interaction Tracker │ Follow-up Mgr │
+│   Performance Engine │ Event Logger                 │
+└──────────┬────────────────────────┬─────────────────┘
+           │                        │
+┌──────────▼──────────┐  ┌──────────▼──────────────────┐
+│    AI DECISION      │  │       DATA STORAGE           │
+│       LAYER         │  │                              │
+│  OpenAI GPT-4o      │  │  PostgreSQL / SQLite         │
+│  Memory Context     │  │  Structured Lead Records     │
+│  Structured Prompts │  │  Interaction History         │
+└─────────────────────┘  │  Event Log                   │
+                         └──────────────────────────────┘
+```
+
+---
+
+## ⚙️ Core Features
+
+### Lead Pipeline Management
+- **5 pipeline stages:** New → Contacted → Qualified → Converted / Lost
+- **3-level intent scoring** (Cold / Warm / Hot) — independent of pipeline stage for smarter prioritisation
+- Partial automation: system updates lead stages automatically based on interaction outcomes
+
+### Interaction Tracking
+- Structured logging for **calls, WhatsApp, and email**
+- Outcome-based classification: `interested` / `follow_up` / `not_interested` / `closed`
+- Full interaction history per lead — every touchpoint captured
+
+### Event-Based Tracking Engine
+- Every stage transition, temperature change, and status update is logged as an immutable event
+- Complete audit trail for analytics and future ML/predictive layers
+
+### Follow-Up Management
+- Scheduling system tracking **pending vs. completed** follow-up actions
+- Prevents leads from falling through the cracks
+- Configurable follow-up intervals per lead temperature
+
+### Performance Intelligence
+- Targets tracking: calls made, conversations had, revenue generated
+- Time-based override capability for custom reporting periods
+- Team and individual performance dashboards
+
+### Memory-Driven AI Layer
+- All AI responses are grounded in **structured stored data only**
+- No hallucination — AI cannot fabricate lead details or interaction history
+- Context is built fresh from the database on every query
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Backend Runtime | Node.js |
+| API Framework | Express.js |
+| Database | PostgreSQL / SQLite |
+| AI Model | OpenAI GPT-4o |
+| Authentication | JWT |
+| Infrastructure | VPS, PM2, NGINX |
+| Deployment | CI/CD, Private VPS |
+
+---
+
+## 🔒 Architecture Advantage
+
+- **Zero third-party automation dependency** — no Zapier, no Make, no n8n
+- All business logic runs on a **dedicated private backend**
+- Complete **data ownership** — no shared databases, no third-party storage
+- Clean separation: `AI Layer` / `Backend Layer` / `API Layer` / `Data Layer`
+- **LangGraph-ready** — architecture supports future multi-agent orchestration
+
+---
+
+## 🚀 Part of the SignalGrowth Platform
+
+This Sales OS is one of four AI systems built on the SignalGrowth platform:
+
+| System | Description |
+|--------|-------------|
+| **Sales OS** | ← You are here |
+| [HR Recruitment OS](https://github.com/AliasgarRaj19/signalgrowth-hr-os) | AI-powered hiring and employee lifecycle management |
+| [SignalGrowth Platform](https://github.com/AliasgarRaj19/signalgrowth-platform) | Multi-tenant SaaS architecture overview |
+
+---
+
+## 👤 Built By
+
+**Aliasgar Raj** — AI Systems Builder & Founder, SignalGrowth
+
+- 🌐 [signalgrowth.in](https://signalgrowth.in)
+- 💼 [linkedin.com/in/aliasgarraj](https://linkedin.com/in/aliasgarraj)
+- 📧 askaliasgarnow@gmail.com
+
+> *Available for consulting engagements, full-time roles, and custom AI system builds.*
